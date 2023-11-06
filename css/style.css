@@ -1,0 +1,26 @@
+section {
+    margin: 15vh 10vh;
+}
+
+section h1 {
+    font-size: 60px;
+    margin-bottom: 3vh;
+    transition: 0.7s;
+    opacity: 0;
+}
+
+section h1,
+section p {
+    transform: translateY(100px);
+}
+
+section p {
+    transition: 0.7s 0.2s;
+    opacity: 0;
+}
+
+section.active h1,
+section.active p {
+    opacity: 1;
+    transform: translateY(0);
+}
